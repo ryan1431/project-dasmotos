@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -19,6 +21,14 @@ h2 {
     color: white;
 }
 
+section h2 {
+    padding-left: 15px;
+}
+
+section p, section h3 {
+    padding-left: 25px;
+}
+
 .brushes h2 {
     background-color: mediumspringgreen;
 }
@@ -35,3 +45,65 @@ h2 {
     font-weight: bold;
     color: blue;
 }
+
+footer {
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: url('https://cdn.mos.cms.futurecdn.net/dJy9ZykYiQN9pTihWZNCXG.jpg') repeat;
+}
+
+address {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+
+address .fill {
+
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.fill p {   
+    float: left;
+    width: 30%;
+}
+
+[class*='icon_'] {
+    max-width: 25px;
+    max-height: 25px;
+    margin-top: 11px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+
+    transition-duration: 0.3s;
+}
+
+.icon_fb {
+    margin-left: 30px;
+}
+
+[class*='icon_']:hover {
+    transform: scale(1.08);
+    -webkit-transform-origin-y: 50px;
+    transition-duration: 0.27s;
+    box-shadow: 0px 5px 4px -2px rgb(191, 164, 164);
+}
+
+.iconDiv {
+    display: flex;
+}
+
